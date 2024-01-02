@@ -48,7 +48,7 @@ function App() {
     price:49,
     user:"Single user",
     isuser:true,
-    storage:"5GB",
+    storage:"500GB",
     isstorage:true,
     publicproducts:"Unlimited Public Products",
     ispublicproducts:true,
