@@ -10,14 +10,14 @@ function Card({data}) {
       <h6 className="Card-price text-center">${data.price}<span className="period">/month</span></h6>
       <hr/>
       <ul className="fa-ul">
-        <li className={data.isUser?"":"text-muted"}><span className="fa-li"><i className={data.isUser?"fas fa-check":"fas fa-times"}></i></span>{data.plan!=="FREE"?<b>{data.user}</b>:data.user}</li>
-        <li className={data.isStorage?"":"text-muted"}><span className="fa-li"><i className={data.isStorage?"fas fa-check":"fas fa-times"}></i></span>{data.storage}</li>
-        <li className={data.ispublicproducts?"":"text-muted"}><span className="fa-li"><i className={data.isPublicProducts?"fas fa-check":"fas fa-times"}></i></span>{data.PublicProducts}</li>
-        <li className={data.iscommunity?"":"text-muted"}><span className="fa-li"><i className={data.iscommunity?"fas fa-check":"fas fa-times"}></i></span>{data.communityAccess}</li>
-        <li className={data.isPrivateProjects?"":"text-muted"}><span className="fa-li"><i className={data.isPrivateProjects?"fas fa-check":"fas fa-times"}></i></span>{data.privateProjects}</li>
-        <li className={data.isPhone?"":"text-muted"}><span className="fa-li"><i className={data.isPhone?"fas fa-check":"fas fa-times"}></i></span>{data.phoneSupport}</li>
-        <li className={data.isSubDomain?"":"text-muted"}><span className="fa-li"><i className={data.isSubDomain?"fas fa-check":"fas fa-times"}></i></span>{data.plan==="PRO"?<><b>Unlimited</b> {data.subDomain}</>:data.subDomain}</li>
-        <li className={data.isReports?"":"text-muted"}><span className="fa-li"><i className={data.isReports?"fas fa-check":"fas fa-times"}></i></span>{data.reports}</li>
+        <li className={data.isuser?"":"text-muted"}><span className="fa-li"><i className={data.User?"fas fa-check":"fas fa-times"}></i></span>{data.plan!=="FREE"?<b>{data.user}</b>:data.user}</li>
+        <li className={data.isstorage?"":"text-muted"}><span className="fa-li"><i className={data.Storage?"fas fa-check":"fas fa-times"}></i></span>{data.storage}</li>
+        <li className={data.ispublicproducts?"":"text-muted"}><span className="fa-li"><i className={data.PublicProducts?"fas fa-check":"fas fa-times"}></i></span>{data.PublicProducts}</li>
+        <li className={data.iscommunity?"":"text-muted"}><span className="fa-li"><i className={data.community?"fas fa-check":"fas fa-times"}></i></span>{data.communityAccess}</li>
+        <li className={data.isprivateproducts?"":"text-muted"}><span className="fa-li"><i className={data.PrivateProjects?"fas fa-check":"fas fa-times"}></i></span>{data.privateProjects}</li>
+        <li className={data.isphone?"":"text-muted"}><span className="fa-li"><i className={data.Phone?"fas fa-check":"fas fa-times"}></i></span>{data.phoneSupport}</li>
+        <li className={data.issubdomain?"":"text-muted"}><span className="fa-li"><i className={data.SubDomain?"fas fa-check":"fas fa-times"}></i></span>{data.plan==="PRO"?<><b>Unlimited</b> {data.subDomain}</>:data.subDomain}</li>
+        <li className={data.ismonthlyreports?"":"text-muted"}><span className="fa-li"><i className={data.Reports?"fas fa-check":"fas fa-times"}></i></span>{data.reports}</li>
       </ul>
       <div className="d-grid">
         <a href="#" className="btn btn-primary text-uppercase">Button</a>
